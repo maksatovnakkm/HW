@@ -1,0 +1,30 @@
+k = int(input())
+for n in range(1, 11):
+    print(k, "x", n, "=", k * n)
+
+
+
+
+print("Задайте количество чисел:")
+k = int(input())
+for n in range(k):
+    n = float(input("Введите число:"))
+print("Сумма чисел:", n + n)
+
+
+
+k = str(input())
+while (k != "PRINT"):
+    print("id" + k)
+    k = str(input())
+
+
+
+print("Введите два числа:")
+k = float(input())
+n = float(input())
+while (n != 0):
+    print(k + n, k - n, k * n, k // n)
+    k = float(input())
+    n = float(input())
+    print("На ноль делить нельзя")
