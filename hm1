@@ -1,0 +1,60 @@
+n = int(input())
+k = int(input())
+if k//n:
+    print("Количество шаурмы на каждого студента:")
+elif k%n:
+    print("Оставшаяся шаурма в холодильнике")
+
+
+abc = int(input())
+c = abc % 10
+b = (abc % 100) // 100
+a = abc //100
+print(a,b,c, sep='')
+print(a,c,b, sep='')
+print(b,a,c, sep='')
+print(b,c,a, sep='')
+print(c,a,b, sep='')
+print(c,b,a, sep='')
+
+
+
+k = input()
+n = input()
+if k != n:
+ print("Пароль не принят! Введённые пароли не совпадают.")
+if k == n:
+ print("Пароль принят.")
+
+
+
+a = int(input())
+b = int(input())
+if a >= b:
+    print(a, "-Наибольшее число", b, "-Наименьшее число")
+elif a <= b:
+    print(a, "-Наименьшее число", b, "-Наибольшее число")
+
+k = int(input())
+if k <= 18:
+    print("Доступ запрещен.")
+elif k >= 18:
+    print("Доступ разрешен.")
+
+num = int(input())
+a = num//100
+b = num//100%10
+c = num//10%10
+if c<=a>=b:
+    print(a, "Наибольшее число")
+elif c<=b>=a:
+    print(b, "Наибольшее число")
+elif a<=c>=b:
+    print(c, "Наибольшее число")
+
+
+num = int(input())
+if num % 2 == 0:
+    print("Число", num, "четное")
+else:
+    print("Число", num, "нечетное")
