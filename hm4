@@ -1,0 +1,56 @@
+n = int(input())
+a = int(input())
+b = int(input())
+for i in range (n, 0, - 1):
+    if (i % 2) != 0:
+        print(i)
+        
+import math
+while True:
+    a = input("Введите слово:")
+    if a == "Лого":
+      l=input("Введите строку:")
+      print(math.log(len(l)))
+    elif a == "Триго":
+        d = float(input("Введите число:"))
+        print("sin", "(", (d), ")", "=", math.sin(math.radians(abs(d))))
+        print("cos", "(", (d), ")", "=", math.cos(math.radians(abs(d))))
+        print("tg", "(", (d), ")", "=", math.tan(math.radians(abs(d))))
+        print("ctg", "(", (d), ")", "=", 1/math.tan(math.radians(abs(d))))
+    elif a == "Конец":
+        break
+        
+import random
+n = int(input())
+a = random.randint(0, 1000)
+b = random.randint(0, 1000)
+while True:
+    if a <= n <= b:
+        print("Lucky!")
+        break
+    else:
+        print("Try again!")
+        break
+        
+import math
+import random
+while True:
+    k = int(input())
+    n = int(input())
+    M = random.randint(k, n)
+    for i in range(M+1):
+        if k <= i <= n:
+            print(math.log10(i))
+            a = str(input("Желаете продолжить? Y/N"))
+            if a == "Y":
+                print(math.log10(i))
+            elif a == "N":
+             break
+             
+             
+import math
+k = int(input())
+for i in range (1, k+1):
+    if i % 5 != 0:
+        print("Длина окружности с радиусом", (i), ":", 2*math.pi*i)
+        print("Площадь круга с радиусом", (i), ":", math.pi*i**2)
