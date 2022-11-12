@@ -19,6 +19,26 @@ print(c,b,a, sep='')
 
 
 
+print('введите время готовки')
+a = int(input())
+print('введите время уборки')
+b = int(input())
+print('введите время стирки')
+c = int(input())
+d=600
+e=d+a+b+c
+i=e%60
+t=e//60
+if i<10:
+i='0'+str(i)
+while t > 24:
+t = t-24
+if t < 10:
+t = "0" + str(t)
+print(t, ':', i)
+
+
+
 k = input()
 n = input()
 if k != n:
@@ -35,11 +55,15 @@ if a >= b:
 elif a <= b:
     print(a, "-Наименьшее число", b, "-Наибольшее число")
 
+
+
 k = int(input())
 if k <= 18:
     print("Доступ запрещен.")
 elif k >= 18:
     print("Доступ разрешен.")
+
+
 
 num = int(input())
 a = num//100
@@ -53,8 +77,24 @@ elif a<=c>=b:
     print(c, "Наибольшее число")
 
 
-num = int(input())
-if num % 2 == 0:
-    print("Число", num, "четное")
-else:
-    print("Число", num, "нечетное")
+print("введите число")
+a = int(input())
+b = int(input())
+c = int(input())
+d = int(input())
+count = 0
+g = 0
+if a % 2 > 0:
+count += 1
+g += a
+if b % 2 > 0:
+count += 1
+g += b
+if c % 2 > 0:
+count += 1
+g += c
+if d % 2 > 0:
+count += 1
+g += d
+print(count, 'количество ничетных чисел')
+print(g, "сумма ничётных чисел")
